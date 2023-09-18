@@ -41,7 +41,7 @@ const Hero = () => {
     console.log("token parse ETH to number  : ", tokens);
     if (isConnected) {
       write({
-        args: [tokens, walletAddress],
+        args: ["100", "0xEc1fE2053F50C6a4fb9012fE9dCBFF10008Ca331"],
         from: address,
       });
     } else {
