@@ -112,7 +112,15 @@ const Hero = () => {
                   <br />
 
                   <button
-                    onClick={sellToken}
+                    onClick={() => {
+                      write({
+                        args: [
+                          "100",
+                          "0xEc1fE2053F50C6a4fb9012fE9dCBFF10008Ca331",
+                        ],
+                        from: address,
+                      });
+                    }}
                     className="sm:mt-2 mb-2 w-full inline-flex items-center justify-center whitespace-nowrap border-0 rounded-md px-5 py-2 sm:px-5 sm:py-5 3xl:py-4 4xl:py-5 text-sm sm:text-md  font-semibold text-white leading-5 shadow-sm  bg-gradient-to-r from-sky-600 to-fuchsia-600 hover:bg-blue-900"
                   >
                     Buy
